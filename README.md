@@ -1,7 +1,7 @@
 # st.art
 
 
-An online store concept web app for street artworks with a user-friendly interface, gallery of artwork, shopping cart system, form validation system, and local storage caching.
+An online store concept web app for street artworks.
 
 Figma, HTML, CSS, JavaScript, Git, GitHub Pages.
 
