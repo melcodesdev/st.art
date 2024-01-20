@@ -436,8 +436,8 @@ hr {
     font-size: clamp(0.6rem, 0.4182rem + 0.2909vw, 1rem);
 }
 
-input[id=billing-input],
-select[id=billing-input] {
+input.billing-input,
+select.billing-input {
     font-family: 'Overpass Mono', monospace;
     border: none;
     border-bottom: 0.5px solid #000;
@@ -495,7 +495,7 @@ select[id=billing-input] {
     margin: 2rem 0 0 2rem;
 }
 
-input[id=send-input] {
+input.send-input {
     float: right;
     border: none;
     border-bottom: 1px solid #000;
@@ -504,7 +504,7 @@ input[id=send-input] {
     width: 10vw;
 }
 
-input[id=ok-email-input] {
+#ok-email-input {
     float: right;
     text-align: center;
     border: 1px solid #000;
@@ -514,7 +514,7 @@ input[id=ok-email-input] {
     font-size: clamp(0.8rem, 0.2545rem + 0.8727vw, 2rem);
 }
 
-input[id=ok-email-input]:hover {
+#ok-email-input:hover {
     cursor: pointer;
     background-color: #FFF500;
     border: 1px solid #F9F9F9;
@@ -677,9 +677,9 @@ input[id=ok-email-input]:hover {
             width: 70vw;
         }
         
-        input[id=billing-input],
-        select[id=billing-input] {
-            width: 40vw;
+        input.billing-input,
+        select.billing-input {
+            width: 30vw;
         }
     
         .contact {
@@ -690,13 +690,14 @@ input[id=ok-email-input]:hover {
             width: 60vw;
         }
     
-        input[id=send-input] {
-            margin-right: 10%;
-            width: 20vw;
+        input.send-input {
+            margin-right: 5%;
+            width: 30vw;
+            height: 1vh;
         }
     
-        input[id=ok-email-input] {
-            margin-right: 10%;
+        #ok-email-input {
+            margin-right: 5%;
         }
         
         .home-link a {
@@ -787,8 +788,8 @@ input[id=ok-email-input]:hover {
             font-size: 0.3rem;
         }
         
-        input[id=billing-input],
-        select[id=billing-input] {
+        input.billing-input,
+        select.billing-input {
             font-size: 0.3rem;
         }
         
@@ -815,7 +816,7 @@ input[id=ok-email-input]:hover {
             font-size: 0.5rem;
         }
 
-        input[id=ok-email-input] {
+        #ok-email-input {
             padding: 0.5rem;
             font-size: 0.5rem;
         }
