@@ -922,4 +922,3 @@ window.onload = () => {
   showTitles();
   showCarts();
 }
-
