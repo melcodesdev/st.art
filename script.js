@@ -18,17 +18,34 @@ function hoverOnText() {
 
 //SHOW THE IMAGES IN THE SHOWCASE DISPLAY
 function showImages() {
-  let images = document.querySelectorAll(".image");
+  const container = document.getElementById("image-container");
 
-  images.forEach(function (image, index) {
-    let srcValue = 'images/gallery' + (index + 1) + '.jpg';
+  for (let index = 1; index <= 14; index++) {
+    const imageSet = document.createElement("div");
+    const image = document.createElement("img");
+    const imageText = document.createElement("div");
+    const itemTitle = document.createElement("div");
+    const priceTag = document.createElement("div");
 
-    image.setAttribute('src', srcValue);
+    imageSet.classList.add("image-set");
+    image.classList.add("image");
+    imageText.classList.add("image-text");
+    itemTitle.classList.add("item-title");
+    priceTag.classList.add("price-tag");
+
+    image.setAttribute("src", `images/gallery${index}.jpg`);
+    image.setAttribute("alt", "Gallery image");
+
+    imageText.appendChild(itemTitle);
+    imageText.appendChild(priceTag);
+    imageSet.appendChild(image);
+    imageSet.appendChild(imageText);
+    container.appendChild(imageSet);
 
     image.addEventListener("click", function () {
-      openImageInSamePage(srcValue);
+      openImageInSamePage(image.getAttribute("src"));
     });
-  });
+  }
 
 
   // FULL SCREEN IMAGE VIEW UPON CLICKING WITH DARK BACKGROUND EFFECT
